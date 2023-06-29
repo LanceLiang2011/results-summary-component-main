@@ -1,0 +1,189 @@
+:root {
+  /* Primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --light-red-bg: hsl(0, 100%, 67%, 0.1);
+  --orangey-yellow-bg: hsl(39, 100%, 56%, 0.1);
+  --green-teal-bg: hsl(166, 100%, 37%, 0.1);
+  --cobalt-blue-bg: hsl(234, 85%, 45%, 0.1);
+
+  /* Gradients */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 24px;
+  padding: 0;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.card-wrapper {
+  margin: 284px auto;
+  width: 736px;
+  height: 512px;
+  display: flex;
+  border-radius: 32px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* other styles, like padding, border-radius, etc. */
+}
+
+.score-card {
+  color: var(--pale-blue);
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  text-align: center;
+  padding: 24px;
+  border-radius: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.summary-card {
+  color: var(--dark-gray-blue);
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+.your-result {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.round-circle {
+  background: linear-gradient(var(--dark-gray-blue), var(--light-royal-blue));
+  padding: 32px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.round-circle > div {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(10px);
+}
+
+.score {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.of-handred {
+  font-size: 15px;
+  margin: 0;
+  color: var(--light-lavender);
+}
+
+.rank {
+  font-size: 25px;
+}
+
+.remark {
+  font-size: 15px;
+  color: var(--light-lavender);
+}
+
+.summary {
+  font-size: 20px;
+}
+
+.performance-card {
+  display: flex;
+  width: 90%;
+  border-radius: 12px;
+  justify-content: start;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.red {
+  background: var(--light-red-bg);
+}
+
+.red > .category {
+  color: var(--light-red);
+}
+
+.yellow {
+  background: var(--orangey-yellow-bg);
+}
+
+.yellow > .category {
+  color: var(--orangey-yellow);
+}
+
+.green {
+  background: var(--green-teal-bg);
+}
+
+.green > .category {
+  color: var(--green-teal);
+}
+
+.blue {
+  background: var(--cobalt-blue-bg);
+}
+
+.blue > .category {
+  color: var(--cobalt-blue);
+}
+
+.percentage {
+  margin-left: auto;
+}
+
+.percentage::after {
+  content: " / 100";
+  color: gray;
+}
+
+.btn {
+  width: 100%;
+  font-size: 18px;
+  padding: 1rem;
+  border: 0;
+  border-radius: 1.75rem;
+  color: var(--pale-blue);
+  background: var(--dark-gray-blue);
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
