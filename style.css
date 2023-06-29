@@ -113,6 +113,7 @@ img {
 .remark {
   font-size: 15px;
   color: var(--light-lavender);
+  width: 65%;
 }
 
 .summary {
