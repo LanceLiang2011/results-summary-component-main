@@ -188,3 +188,15 @@ img {
 .btn:active {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 740px) {
+  .card-wrapper {
+    flex-direction: column;
+    width: 450px;
+    height: 950px;
+  }
+
+  .summary-card {
+    gap: 12px;
+  }
+}
