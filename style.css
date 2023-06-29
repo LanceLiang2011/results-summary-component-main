@@ -192,7 +192,7 @@ img {
 @media (max-width: 740px) {
   .card-wrapper {
     flex-direction: column;
-    width: 450px;
+    width: 370px;
     height: 950px;
   }
 
