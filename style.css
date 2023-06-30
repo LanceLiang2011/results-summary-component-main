@@ -62,7 +62,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .summary-card {
@@ -133,6 +133,7 @@ img {
 
 .red {
   background: var(--light-red-bg);
+  margin-top: -36px;
 }
 
 .red > .category {
