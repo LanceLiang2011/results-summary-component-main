@@ -62,7 +62,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .summary-card {
@@ -72,7 +72,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-weight: 500;
 }
 
@@ -110,6 +110,7 @@ img {
 
 .rank {
   font-size: 32px;
+  margin: 0;
 }
 
 .remark {
@@ -117,6 +118,7 @@ img {
   color: var(--light-lavender);
   width: 25ch;
   text-align: center;
+  /* margin-bottom: 32px; */
 }
 
 .summary {
@@ -134,7 +136,7 @@ img {
 
 .red {
   background: var(--light-red-bg);
-  margin-top: -36px;
+  margin-top: -32px;
 }
 
 .red > .category {
